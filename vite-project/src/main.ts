@@ -1,27 +1,6 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import { setupCounter } from './counter'
+import '@material/web/elevation/elevation.js'
+import '@material/web/navigationbar/navigation-bar.js'
 import '@material/web/button/outlined-button'
-
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-  
-  <md-outlined-button label="Hola!" ></md-outlined-button>
-  
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+import '@material/web/textfield/outlined-text-field.js'
+import '@material/web/textfield/filled-text-field.js'

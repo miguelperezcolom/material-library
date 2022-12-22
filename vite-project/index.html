@@ -5,9 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <style>
+      .row {
+          width: 80%;
+          display: block;
+          margin: 10px;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+
+      <div class="row">
+          <div class="row"><md-navigation-bar label="Hola!" ></md-navigation-bar></div>
+          <!--<md-elevation></md-elevation>-->
+          <div class="row"><md-outlined-text-field label="Hola!"></md-outlined-text-field></div>
+          <div class="row"><md-filled-text-field label="Hola!"></md-filled-text-field></div>
+          <div class="row"><md-outlined-button label="Hola!"></md-outlined-button></div>
+          <div class="row"><md-navigation-bar label="Hola!" ></md-navigation-bar></div>
+      </div>
+
+      <script type="module" src="/src/main.ts"></script>
+
   </body>
 </html>
